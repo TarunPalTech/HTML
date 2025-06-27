@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Colgroup</title>
+    <style>
+        table, th, td {
+            border: 1px solid #fff;
+            color: #fff;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 15px 30px;
+            text-align: center;
+        }
+        /* to add properties on alternate columns */
+        /* th, td:nth-child(odd){
+            background-color: burlywood;
+        }
+        th, td:nth-child(even){
+            background-color: cadetblue;
+        } */
+    </style>
+</head>
+<body style="background-color: black;">
+    <!-- colgroup element is used to create set of columns columns so that we can add styles or attributes to entire set of columns -->
+    <table style="width: 100%;">
+        <colgroup>
+            <col span="2" style="background: burlywood;">
+            <col span="3" style="background: cadetblue;">
+        </colgroup>
+        <caption style="font-weight: bolder; font-size: larger;
+        padding-bottom: 10px;">(Employees Information)</caption>
+        <tr>
+            <th width="20%">Name</th>
+            <th width="10%">Age</th>
+            <th width="20%">Gender</th>
+            <th width="30%">Email</th>
+            <th width="20%">Country</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>28</td>
+            <td>Male</td>
+            <td>john.doe@example.com</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>32</td>
+            <td>Male</td>
+            <td>jane.smith@example.com</td>
+            <td>Canada</td>
+        </tr>
+        <tr>
+            <td>Alex Lee</td>
+            <td>25</td>
+            <td>Male</td>
+            <td>alex.lee@example.com</td>
+            <td>UK</td>
+        </tr>
+    </table>
+</body>
+</html>

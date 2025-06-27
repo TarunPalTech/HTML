@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and Rowspan</title>
+    <style>
+        table, th, td{
+            border: 1px solid #fff;
+            color: #fff;
+            text-align: center;
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 20px;
+            font-size: large;
+        }
+        caption{
+            margin-bottom: 10px;
+            font-size: xx-large;
+            font-weight: bolder;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <!-- colspan and rowspan are used to merge rows and columns -->
+
+    <table width="100%">
+        <caption>(Students Information)</caption>
+        <tr>
+            <th colspan="2">Full Name</th>
+            <th rowspan="2">Age</th>
+            <th rowspan="2">Gender</th>
+            <th rowspan="2">Country</th>
+        </tr>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>USA</td>
+        </tr>
+        <tr>
+            <td>Tim</td>
+            <td>Alice</td>
+            <td>21</td>
+            <td>Male</td>
+            <td>UK</td>
+        </tr>
+        <tr>
+            <td>Denis</td>
+            <td>Ritchie</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>Canada</td>
+        </tr>
+    </table>
+</body>
+</html>
