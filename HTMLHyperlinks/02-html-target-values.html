@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different Target Value</title>
+  </head>
+  <body>
+    <!-- 
+    Some common target values are:
+        1. _self — opens in the same tab (default behavior)
+        2. _blank — opens in a new tab/window
+        3. _parent — opens in the parent frame
+        4. _top — opens in the full body (breaking out of all frames)
+    -->
+
+    <!-- target="_self" -->
+    <a href="https://github.com/TarunPalTech" target="_self"
+      >Click here to visit my github profile!</a
+    >
+
+    <br>
+    
+    <!-- target="_blank" -->
+    <a href="https://github.com/TarunPalTech" target="_self"
+      >Click here to visit my github profile!</a
+    >
+
+    <br>
+
+    <!-- target="_parent" -->
+    <iframe src="./parent.html" frameborder="0"></iframe>
+
+    <br>
+
+    <!-- target="_top" -->
+     <iframe src="./parent.html" height="600px" width="400px" frameborder="0"></iframe>
+
+     <!-- top.html and parent.html is used for is used to create iframe examples so that we can create examples for _top and _parent -->
+  </body>
+</html>
