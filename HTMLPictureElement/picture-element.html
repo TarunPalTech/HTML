@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Picture Element</title>
+  </head>
+  <body>
+    <!-- Most of the browsers supports picture element and the main purpose to use it is, it provides a better way to display our image. Only that image will be display which is the best fit according to our screen width. -->
+
+    <picture>
+      <source srcset="images/laptop.jpg" media="(max-width: 300px)">
+      <source srcset="images/camera.jpg" media="(max-width: 500px)">
+      <source srcset="images/mobile.jpg" media="(max-width: 700px)">
+      <source srcset="images/cup.jpg" media="(min-width: 800px)">
+      <img src="images/notebook.jpg" height="500px" width="500px" alt="Default notebook image">
+    </picture>
+
+    <!-- The most important thing is, you must use img element so that if any image is not going to be available then default image will be displayed. -->
+     <!-- We can define as many source elements that we want! -->
+  </body>
+</html>
