@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript in HTML</title>
+  </head>
+  <body>
+    <button id="useJS">Button</button>
+  </body>
+  <!-- <script> tag allows to use JS in our HTML document. -->
+  <!-- use it after body element so that HTML has loaded before the execution of JS. -->
+  <script>
+    document.getElementById("useJS").addEventListener("click", () => {
+      alert("You clicked the button!");
+    });
+  </script>
+
+  <noscript>Please Enable JavaScript so that JavaScript can load!</noscript>
+</html>
