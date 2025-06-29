@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Input</title>
+  </head>
+  <body>
+    <!-- HTML forms are used to collect data from the user. -->
+    <form>
+      <!-- label elements tells to the user what to type... and input element is for enter data -->
+      <!-- name attribute provides label for the data. -->
+      <!-- for element connects label to an input field. -->
+      <!-- value of for and id must be same. -->
+      <!-- placeholder hints text inside input field -->
+      <label for="fname">
+        First Name:
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="Enter your first name"
+        />
+      </label>
+      <br /><br />
+      <label for="lname">
+        Last Name:
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="Enter your last name"
+        />
+      </label>
+      <br /><br />
+      <input type="submit" />
+    </form>
+    <!-- Also note that the default width of an input field is 20 characters. -->
+  </body>
+</html>

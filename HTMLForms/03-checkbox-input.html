@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chekbox Input Element</title>
+  </head>
+  <body>
+    <!-- fieldset is used to group related form controls together. -->
+    <!-- legend is used to provide a label for fieldset. -->
+
+    <!-- names can be same or differnt based on the requirement -->
+    <form>
+      <fieldset>
+        <legend>Choose your favorite games:</legend>
+        <label for="cricket">
+          Cricket:
+          <input type="checkbox" name="game" value="cricket" id="cricket" />
+        </label>
+        <label for="football">
+          Football:
+          <input type="checkbox" name="game" value="football" id="football" />
+        </label>
+        <label for="chess">
+          Chess: <input type="checkbox" name="game" value="chess" id="chess" />
+        </label>
+        <label for="shooting">
+          Shooting:
+          <input type="checkbox" name="game" value="shooting" id="shooting" />
+        </label>
+      </fieldset>
+      <input type="submit" />
+    </form>
+
+    <!-- id and value attributes are recommended but not mandatory, if you are not using value attribute then default value is on -->
+    <form>
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label>
+          <input type="checkbox" name="subscribe_newsletter" />
+          Subscribe to newsletter
+        </label>
+        <br />
+
+        <label>
+          <input type="checkbox" name="accept_terms" />
+          I accept the terms and conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

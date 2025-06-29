@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Data List</title>
+  </head>
+  <body>
+    <!-- don't forget to use list attribute -->
+    <form action="">
+      <label for="country">
+        Country:
+        <input type="text" name="country" id="country" list="countries" />
+        <datalist id="countries">
+          <option value="India">
+          <option value="USA">
+          <option value="UK">
+          <option value="France">
+          <option value="Germany">
+        </datalist>
+      </label>
+      <input type="submit">
+    </form>
+  </body>
+</html>

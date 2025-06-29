@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admission Form</title>
+  </head>
+  <body>
+    <!-- We can't use novalidate attribute because we want that default form validation will be perform such as checks like required, email, number, text, min, max etc. -->
+    <form action="submit.html" autocomplete="off">
+      <fieldset>
+        <legend>Personal Information:</legend>
+        <label for="fname">
+          First Name:
+          <input
+            type="text"
+            name="fname"
+            id="fname"
+            placeholder="Enter your first name"
+            required
+            autocomplete="off"
+          />
+        </label>
+        <br /><br />
+        <label for="lname">
+          Last Name:
+          <input
+            type="text"
+            name="lname"
+            id="lname"
+            placeholder="Enter your last name"
+            required
+          />
+        </label>
+        <br /><br />
+        <label for="email">
+          Email:
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <br /><br />
+        <label for="dob">
+          Choose your date of birth:
+          <input type="date" name="dob" id="dob" />
+        </label>
+        <br /><br />
+        <label for="mobile_number">
+          Mobile Number:
+          <input
+            type="tel"
+            name="mobile_number"
+            id="mobile_number"
+            placeholder="Enter your mobile number"
+          />
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Address:</legend>
+        <label for="street">
+          Street Address:
+          <textarea
+            name="street"
+            id="street"
+            placeholder="Enter your street address"
+          ></textarea>
+        </label>
+        <br /><br />
+        <label for="country">
+          Country:
+          <select name="country" id="country">
+            <option value="" disabled selected>Select</option>
+            <option value="india">India</option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+            <option value="UAE">UAE</option>
+          </select>
+        </label>
+        <br /><br />
+        <label for="state">
+          State:
+          <input
+            type="text"
+            name="state"
+            id="state"
+            list="state_list"
+            placeholder="Enter your state"
+          />
+          <datalist id="state_list">
+            <option value="Uttar Pradesh"></option>
+            <option value="Karnataka"></option>
+            <option value="Delhi"></option>
+            <option value="Maharashtra"></option>
+            <option value="Rajasthan"></option>
+          </datalist>
+        </label>
+        <br /><br />
+        <label for="zip">
+          Zip Code:
+          <input
+            type="number"
+            name="zip"
+            id="zip"
+            placeholder="Enter zip code"
+            min="100000"
+            max="999999"
+          />
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Course Selection:</legend>
+        <label for="course"> Choose Course: </label>
+        <select name="course" id="course">
+          <optgroup label="graduate">
+            <option value="btech">B.Tech</option>
+            <option value="ba">BA</option>
+          </optgroup>
+          <optgroup label="postgraduate">
+            <option value="mtech">M.Tech</option>
+            <option value="ma">MA</option>
+          </optgroup>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Other Details</legend>
+        <label>
+          Select Gender:
+          <br /><br />
+          <label for="gender">
+            Male: <input type="radio" value="male" name="gender" id="gender" />
+          </label>
+          <br /><br />
+          <label for="gender">
+            Female:
+            <input type="radio" value="female" name="gender" id="gender" />
+          </label>
+          <br /><br />
+          <label for="gender">
+            Not to specify:
+            <input type="radio" value="none" name="gender" id="gender" />
+          </label>
+        </label>
+        <br /><br />
+        <label>
+          Select Your Hobbies:
+          <br /><br />
+          <label for="cricket">
+            Cricket:
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="cricket"
+              value="cricket"
+            />
+          </label>
+          <br /><br />
+          <label for="shooting">
+            Shooting:
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="shooting"
+              value="shooting"
+            />
+          </label>
+          <br /><br />
+          <label for="Ttennis">
+            Table Tennis:
+            <input
+              type="checkbox"
+              name="hobbies"
+              id="Ttennis"
+              value="Ttennis"
+            />
+          </label>
+          <br /><br />
+          <label for="chess">
+            Chess:
+            <input type="checkbox" name="hobbies" id="chess" value="chess" />
+          </label>
+        </label>
+        <br /><br />
+        <label for="photo">
+          Upload Image:
+          <input type="file" name="photo" accept="image/*" id="photo" />
+        </label>
+        <br /><br />
+        <label for="marks">Percentage in 12th Grade</label>
+        <input
+          type="number"
+          id="marks"
+          name="marks"
+          min="0"
+          max="100"
+          step="0.01"
+          required
+        />
+        <!-- 
+        `step` - number, range inputs - Define allowed increments (decimal or integer steps) 
+        `accept` - file inputs - Limit selectable file types(image/*, .pdf etc.)
+
+        -->
+        <br /><br />
+        <input type="text" value="Verified by Admin" readonly disabled />
+      </fieldset>
+      <input type="submit" value="submit" />
+      <input type="reset" value="reset" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Radio Input</title>
+  </head>
+  <body>
+    <!-- Value of id and name must be same otherwise multiple options can be selected but if you want to select multiple elements then use checkbox not radio buttons. -->
+    <form>
+      <fieldset>
+        <legend>Choose your gender:</legend>
+        <label for="gender"
+          >Male: <input type="radio" name="gender" value="male" id="gender"
+        /></label>
+        <label for="gender">
+          Female:
+          <input type="radio" name="gender" value="female" id="gender" />
+        </label>
+        <label for="gender">
+          Not to Specify:
+          <input
+            type="radio"
+            name="gender"
+            value="not- specified"
+            id="gender"
+          />
+        </label>
+      </fieldset>
+      <input type="submit" value="submit" />
+    </form>
+  </body>
+</html>
